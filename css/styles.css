@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.image {
+  min-height: 100vh;
+  background-image: url('/images/coolestHat.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 30px;
+}
+
+.content {
+  background: white;
+  padding: 15px;
+  border-radius: 3px;
+}

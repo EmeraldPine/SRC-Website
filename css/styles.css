@@ -9,10 +9,11 @@ body {
 }
 
 .image {
-  min-height: 100vh;
   background-image: url('/images/coolestHat.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
   padding: 30px;
 }
 
@@ -20,4 +21,5 @@ body {
   background: white;
   padding: 15px;
   border-radius: 3px;
+  background-color: rgb(255, 255, 255, 0.8);
 }

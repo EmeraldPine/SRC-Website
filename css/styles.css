@@ -71,16 +71,8 @@ body {
 }
 
 .list-image {
-      display: none; /* Hidden by default */
-      margin-top: 10px;
-      max-width: 100%;
-      border-radius: 8px;
-    }
-
-@media (min-width: 768px) {
-   /* tablets and desktop */
-   .image {
-
-   }
-
+  display: none;
+  margin-top: 10px;
+  max-width: 100%;
+  border-radius: 8px;
 }

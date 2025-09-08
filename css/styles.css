@@ -6,20 +6,74 @@
 
 body {
   margin: 0;
-}
-
-.image {
-  background-image: url('/images/coolestHat.jpg');
+  background-color: #e95c6c;
+  font-family: 'Roboto', sans-serif;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  padding: 30px;
+  padding: 10px;
 }
 
-.content {
-  background: white;
-  padding: 15px;
-  border-radius: 3px;
-  background-color: rgb(255, 255, 255, 0.8);
+.img {
+  height: 1em;
+
+}
+
+#slidecaption {
+     -webkit-animation-name: spinner;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 2s;
+    animation-name: spinner;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+/* WebKit and Opera browsers */
+@-webkit-keyframes spinner {
+    from
+    {
+        -webkit-transform: rotateY(0deg);
+    }
+    to {
+        -webkit-transform: rotateY(-360deg);
+    }
+}
+
+/* all other browsers */
+@keyframes spinner {
+    from {
+        -moz-transform: rotateY(0deg);
+        -ms-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+    }
+    to
+    {
+        -moz-transform: rotateY(-360deg);
+        -ms-transform: rotateY(-360deg);
+        transform: rotateY(-360deg);
+
+    }
+}
+
+.list-group-item{
+  background-color: rgb(234, 228, 208, 0.8);
+}
+
+.card{
+  background-color: rgb(234, 228, 208, 0.8);
+}
+
+@media (min-width: 768px) {
+   /* tablets and desktop */
+   .image {
+
+   }
+
 }

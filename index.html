@@ -66,12 +66,23 @@
             <li class="list-group-item">Tide Pen</li>
             <li class="list-group-item">Tums</li>
             <li class="list-group-item">Tylenol – 500mg pills</li>
-            <li class="list-group-item">Yeehaw Frog Sticker – 1</li>
+            <li class="list-group-item">Yeehaw Frog Sticker – 1 <img src="images/yeehawFrog.jpg" class="list-image"></li>
         </ul>
 
         <div class = "card text-center">
             <h6 class="card-header">Add me on LinkedIn -> <a href = "https://www.linkedin.com/in/ryan-m-chang/"><i class="fab fa-linkedin"></i></a></h6>
         </div>
+
+        <script>
+          document.querySelectorAll('.list-group-item').forEach(item => {
+            item.addEventListener('click', () => {
+              const img = item.querySelector('.list-image');
+              img.style.display = img.style.display === 'none' || img.style.display === ''
+                ? 'block'
+                : 'none';
+              });
+            });
+        </script>
     </div>
 </div>
 
